@@ -1,0 +1,5 @@
+(b'\xc3\xbfby-sequence\xc3\xbf0000000000000002', b'{"api":{"port":8080,"password":"Elp//afaOhvhwTrsWol+IHrff3DiIWgUeXh9QBDvwTv+ud0qVOCM4+CJNScdOT6Fr2ijXRzaV6lWkR6jyw1gQw==","enable":true,"salt":"6e42d7ca303362864ad0e18c6a686328"},"_attachments":{},"_id":"a733f0a7-4fe2-4120-8603-775370fd871a","_rev":"2-c8ed7472875060f20800fcba40ed958a"}')
+(b'\xc3\xbfdocument-store\xc3\xbfa733f0a7-4fe2-4120-8603-775370fd871a', b'{"rev":"2-c8ed7472875060f20800fcba40ed958a","id":"a733f0a7-4fe2-4120-8603-775370fd871a","rev_tree":[{"pos":1,"ids":["f52800793d58ce95987ddde4e0a275a1",{"status":"available"},[["c8ed7472875060f20800fcba40ed958a",{"status":"available"},[]]]]}],"rev_map":{"1-f52800793d58ce95987ddde4e0a275a1":1,"2-c8ed7472875060f20800fcba40ed958a":2},"winningRev":"2-c8ed7472875060f20800fcba40ed958a","deleted":false,"seq":2}')
+(b'\xc3\xbfmeta-store\xc3\xbf_local_doc_count', b'1')
+(b'\xc3\xbfmeta-store\xc3\xbf_local_last_update_seq', b'2')
+(b'\xc3\xbfmeta-store\xc3\xbf_local_uuid', b'"af676769-cd7f-42ad-872d-5ab716082efb"')
