@@ -1,0 +1,12 @@
+version: '3'
+services:  
+  gcups:
+    container_name: gcups
+    image: ghcr.io/fajfer/gcups:1.1.7
+    ports:
+      - '0.0.0.0:8085:8080'
+    restart: unless-stopped
+    volumes:
+      - $HOME/gcups-rxdb-1-settings:/opt/gcups/db/gcups-rxdb-1-settings
+    devices:
+      - /dev/bus/usb/001/010:/dev/bus/usb/001/010
