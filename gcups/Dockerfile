@@ -7,14 +7,15 @@ RUN apt-get update && apt-get install --no-install-recommends -y wget gpg xvfb l
     python3 -m pip --no-cache-dir install plyvel && \
     python3 -m pip --no-cache-dir uninstall setuptools wheel && \
     apt-get remove -y python3-pip && \
-    mkdir -m775 -p /opt/gcups/db/gcups-rxdb-1-settings
+    mkdir -m775 -p /opt/gcups/db/gcups-rxdb-1-settings && \
+    rm -rf /opt/gcups/license /opt/gcups/manuals
 
 COPY init.sh populate-db.py db.txt /opt/
 WORKDIR /opt
 RUN python3 populate-db.py
 
-ENV GCUPS_HTTP_PORT=8080 GCUPS_PASSWORD=gcups123
-
+ENV GCUPS_HTTP_PORT=8080
+ENV GCUPS_PASSWORD=gcups123
 EXPOSE $GCUPS_HTTP_PORT
 
 ENTRYPOINT ["/opt/init.sh"]
