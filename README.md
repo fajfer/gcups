@@ -20,7 +20,6 @@ Table of Contents
      * [Docker-compose](#docker-compose)
    * [Versioning](#versioning)
    * [FAQ](#faq)
-   * [TODOs](#todos)
 
 ## Quick Start
 For testing purposes (to see if this thing works on your machine) you can run the container in `privileged` mode but this is not recommended, [read](https://learn.snyk.io/lesson/container-runs-in-privileged-mode/).  
@@ -114,5 +113,3 @@ If you are getting the following error:
 /opt/gcups/gcups[101]: ../../third_party/electron_node/src/node_api.cc:1332:napi_status napi_release_threadsafe_function(napi_threadsafe_function, napi_threadsafe_function_release_mode): Assertion `(func) != nullptr' failed.
 ```
 Then you have your UPS connected via USB and provided a wrong `--device` for the docker image. This will obviously make the HTTP server unable to start.
-## TODOs
-- Optimize image size (it's 1.31G as of now which I think is way too much)
