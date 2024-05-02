@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2024 Damian Fajfer <damian@fajfer.org>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
 FROM docker.io/ubuntu:jammy-20240227
 RUN apt-get update && apt-get install --no-install-recommends -y wget gpg xvfb libgbm-dev libasound2 python3-pip dbus-user-session && \
     wget -qO- https://gcups-static.greencell.global/csgsa-keyring.gpg | gpg --dearmor | dd of=/usr/share/keyrings/csgsa-keyring.gpg && \

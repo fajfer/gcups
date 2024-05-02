@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2024 Damian Fajfer <damian@fajfer.org>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
 import plyvel
 
 with open("db.txt", "r") as f:

@@ -1,3 +1,8 @@
+<!--
+SPDX-FileCopyrightText: 2024 Damian Fajfer <damian@fajfer.org>
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+-->
 # GreenCell UPS App in docker
 GC UPS App is a program that enables preview in real time and displays measurement data including input and output voltages, load frequency of the UPS, its temperature and battery capacity.
 
