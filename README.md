@@ -14,6 +14,8 @@ You can setup automatic system shut-off, notifications and email warnings in the
 ## About 
 I took the desktop-only electron app and forced it to run in docker with HTTP webUI enabled. I wrote a [blog entry](https://blog.fajfer.org/2023/09/16/running-green-cell-ups-app-gcups-on-gnu-linux-server/) regarding the subject.
 
+Join us on [Matrix](https://matrix.to/#/#gcups:fsfe.org) to discuss and troubleshoot!
+
 Table of Contents
 =================
 
