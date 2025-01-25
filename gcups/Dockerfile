@@ -1,6 +1,7 @@
-# SPDX-FileCopyrightText: 2024 Damian Fajfer <damian@fajfer.org>
+# SPDX-FileCopyrightText: 2024-2025 Damian Fajfer <damian@fajfer.org>
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
+
 FROM docker.io/ubuntu:jammy-20240227
 RUN apt-get update && apt-get install --no-install-recommends -y wget gpg xvfb libgbm-dev libasound2 python3-pip dbus-user-session && \
     wget -qO- https://gcups-static.greencell.global/csgsa-keyring.gpg | gpg --dearmor | dd of=/usr/share/keyrings/csgsa-keyring.gpg && \
@@ -10,6 +11,8 @@ RUN apt-get update && apt-get install --no-install-recommends -y wget gpg xvfb l
     python3 -m pip --no-cache-dir install plyvel && \
     python3 -m pip --no-cache-dir uninstall setuptools wheel && \
     apt-get remove -y python3-pip && \
+    mkdir -m777 -p /opt/gcups/db && \
+    mkdir -m777 -p /opt/gcups/log && \
     mkdir -m775 -p /opt/gcups/db/gcups-rxdb-1-settings && \
     rm -rf /opt/gcups/license /opt/gcups/manuals && rm -rf /tmp/* && \
     useradd -m gcups && chown -R gcups:gcups /opt/gcups && \

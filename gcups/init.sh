@@ -1,8 +1,7 @@
-# SPDX-FileCopyrightText: 2024 Damian Fajfer <damian@fajfer.org>
+#!/bin/bash
+# SPDX-FileCopyrightText: 2024-2025 Damian Fajfer <damian@fajfer.org>
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
-
-#!/bin/bash
 
 dbus-daemon --session --fork --print-address 1 > /tmp/dbus-session
 export DBUS_SESSION_BUS_ADDRESS=$(cat /tmp/dbus-session)
