@@ -2,8 +2,7 @@ name: Publish Docker image
 
 on:
   push:
-    branches: ["main"]
-    tags: ["1.1.7"]
+    branches: ["main", "fix-ci"]
   pull_request:
     branches: ["main"]
 
