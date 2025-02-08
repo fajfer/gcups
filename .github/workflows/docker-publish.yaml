@@ -67,6 +67,7 @@ jobs:
           tags: ${{ env.TAG_NAME }}
           registry: ${{ env.REGISTRY }}
           dockerfile: gcups/Dockerfile
+          directory: gcups
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
