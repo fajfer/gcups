@@ -67,7 +67,7 @@ jobs:
           image: gcups/fajfer
           tags: ${{ env.TAG_NAME }}
           registry: ${{ env.REGISTRY }}
-          directory: gcups
+          dockerfile: gcups/Dockerfile
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
