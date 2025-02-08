@@ -63,7 +63,7 @@ jobs:
         id: build-and-push
         uses: mr-smithers-excellent/docker-build-push@v6
         with:
-          image: gcups/fajfer
+          image: gcups
           tags: ${{ env.TAG_NAME }}
           registry: ${{ env.REGISTRY }}
           dockerfile: gcups/Dockerfile
