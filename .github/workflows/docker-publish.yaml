@@ -73,7 +73,7 @@ jobs:
 
       - name: Save digest
         id: digest-saver
-        run: echo "digest=$(docker manifest inspect ghcr.io/fajfer/gcups:1.1.7 | jq -r '.config.digest' | cut -c8-)" >> "$GITHUB_OUTPUT"
+        run: echo "digest=$(docker manifest inspect ghcr.io/fajfer/gcups:1.1.7 | jq -r '.config.digest')" >> "$GITHUB_OUTPUT"
       # Sign the resulting Docker image digest except on PRs.
       # This will only write to the public Rekor transparency log when the Docker
       # repository is public to avoid leaking data.  If you would like to publish
